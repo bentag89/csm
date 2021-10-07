@@ -1,0 +1,292 @@
+header,
+footer {
+  background-color: #00022a;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+nav {
+  display: none;
+  position: relative;
+}
+nav ul {
+  position: absolute;
+  background-color: #00022a;
+  margin-top: 0;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+nav > * {
+  margin: 0;
+  padding: 15px 0px;
+}
+nav li {
+  padding: 0px 0px 20px 0px;
+}
+nav a:hover {
+  color: #37b7dd;
+}
+h1,
+.et {
+  text-align: center;
+}
+h1 {
+  text-shadow: 2px 2px 4px black;
+}
+.et {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+h1,
+h2,
+li,
+.csm,
+footer,
+.cta {
+  font-family: "Orbitron", sans-serif;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+hr {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#hamburger-menu {
+  display: none;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+.fa-bars {
+  color: white;
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  font-size: 1.5em;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.left::after {
+  content: "";
+  display: inline-block;
+  width: 45%;
+  border-bottom: 3px solid #1c0152;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.right::before {
+  content: "";
+  display: inline-block;
+  width: 45%;
+  border-bottom: 3px solid #1c0152;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+hr {
+  border-top: 3px solid #1c0152;
+}
+a {
+  text-decoration: none;
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+.pright {
+  text-align: right;
+}
+.top {
+  font-family: "Orbitron", sans-serif;
+  color: #00022a;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 30px;
+}
+.atom {
+  width: 50px;
+  margin: auto;
+  background-color: black;
+  border-radius: 10px 20px;
+}
+.current {
+  color: #37b7dd;
+}
+.csm {
+  color: white;
+  padding: 20px;
+}
+.csmcurrent {
+  color: #a3a1a5;
+}
+.welcome {
+  background-image: url("../../images/space.jpg");
+  color: white;
+  background-size: cover;
+  padding: 10px 0px 40px 0px;
+  margin-bottom: 40px;
+}
+
+/* Home Page */
+
+.explore {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.cta {
+  background-color: #1c0152;
+  color: white;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  text-align: center;
+}
+.fab {
+  font-size: 3em;
+  padding: 20px;
+}
+.social {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+/* Visit Us */
+
+iframe {
+  max-width: 100%;
+}
+.info {
+  padding: 20px 0px 0px 0px;
+}
+.info h2,
+p {
+  padding: 20px 0px 0px 0px;
+}
+.phone {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+.address {
+  margin-top: 0;
+}
+
+/* Events */
+
+.date {
+  font-weight: 700;
+  font-style: italic;
+}
+
+@media (min-width: 600px) {
+  .smaller {
+    max-width: 400px;
+    max-height: 600px;
+    margin-top: 20px;
+  }
+  .leftimg {
+    width: 400px;
+    height: 300px;
+    margin-left: 0;
+  }
+  .rightimg {
+    width: 400px;
+    height: 300px;
+    margin-right: 0;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .info {
+    margin: 80px;
+  }
+  .large {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    display: block;
+    margin-right: 40px;
+  }
+  nav li {
+    display: inline-block;
+    padding: 20px;
+  }
+  nav ul {
+    position: relative;
+    margin-bottom: 0;
+  }
+  #hamburger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 830px) {
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100px;
+    margin: 30px;
+    margin-top: 100px;
+  }
+  .pages {
+    text-align: center;
+  }
+  .cta:hover {
+    background-color: white;
+    color: #1c0152;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100px;
+    margin: 30px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 950px) {
+  .exhibitions {
+    display: flex;
+    justify-content: space-around;
+  }
+  .extext {
+    padding: 0px 10px 0px 20px;
+  }
+}
